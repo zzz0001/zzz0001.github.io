@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录页面</title>
+<style>
+form{
+width:400px;
+height:200px;
+margin:200px auto;
+font-size: 20px;
+}
+.register{
+            border: 1px solid #f00;
+            position: relative;  
+            top: 1px;		
+            left: 106px;
+            background: #e3393c; 
+            width: 208px;
+            height: 24px;
+            line-height: 20px;
+            text-align: center; 
+            border-radius: 6px; 
+       		font-size: 16px;
+       		color: white;
+}
+.A1{
+	padding-left: 1200px;
+}
+body{
+    background-image:url(img/A1.png);
+    background-size:100% 800px;
+    background-repeat:no-repeat;
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+	<a class=A1 href="log.html">登录</a>
+    <form name="form1" action="shop_s/login" method="post">
+        <table> 
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" name="user" style="width:200px" /></td>
+            </tr>
+            <tr>
+                <td>真实姓名：</td>
+                <td><input type="text" name="real_name" style="width:200px" /></td>
+            </tr>
+            <tr>
+                <td>店铺名称：</td>
+                <td><input type="text" name="shop_name" style="width:200px" /></td>
+            </tr>
+            <tr>
+                <td>设置密码：</td>
+                <td><input type="password" name="password1" style="width:200px"/></td>
+            </tr>
+              <tr>
+                <td>确认密码：</td>
+                <td><input type="password" name="password2" style="width:200px"/></td>
+            </tr>
+        </table>
+       <input class="register" type="submit" value="立即注册"/>
+    </form>
+</body>
+</html>
